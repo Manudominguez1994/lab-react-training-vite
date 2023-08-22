@@ -6,6 +6,9 @@ import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
 import Rating from "./components/Rating";
 import DriverCard from "./components/DriverCard";
+import LikeButton from "./components/LikeButton";
+import ClickablePicture from "./components/ClickablePicture";
+import Dice from "./components/Dice";
 
 function App() {
   return (
@@ -59,7 +62,6 @@ function App() {
         color="#222222"
       />
 
-
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
@@ -85,6 +87,24 @@ function App() {
           model: "Audi A3",
           licensePlate: "BE33ER",
         }}
+      />
+      <LikeButton />
+      <LikeButton />
+
+      <ClickablePicture
+        img="src/assets/images/manu.PNG"
+        imgClicked="src/assets/images/584999937b7d4d76317f5ffd.png"
+      />
+
+      <Dice
+        dice={[
+          "src/assets/images/dice-empty.png",
+          "src/assets/images/dice1.png",
+          "src/assets/images/dice2.png",
+          "src/assets/images/dice3.png",
+          "src/assets/images/dice5.png",
+          "src/assets/images/dice6.png",
+        ]}
       />
     </div>
   );
